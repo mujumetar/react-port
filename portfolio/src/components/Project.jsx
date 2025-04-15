@@ -69,7 +69,6 @@ const Project = () => {
                                         </div>
                                     </div>
                                     <img src={ele.img} alt={ele.img} />
-
                                     <div className="row py-2 my-1" >
                                         <div className="col-lg-6">
                                             <button className='btn btn-sm btn-outline-warning w-100'>
