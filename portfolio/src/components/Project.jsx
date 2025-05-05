@@ -1,7 +1,15 @@
-import React, { useState } from 'react'
 
 const Project = () => {
     const proj = [
+        {
+            name: "E-commerce",
+            user: "@muju_metar",
+            type: "React,js,html,css",
+            img: `/img/profile.jpg`,
+            git: "https://github.com/mujumetar/react-ecom",
+            live: "https://github.com/mujumetar/react-ecom",
+            time: new Date()
+        },
         {
             name: "E-commerce",
             user: "@muju_metar",
