@@ -4,7 +4,8 @@ import { useState } from 'react';
 const Panel = () => {
 
     const [projdata, setProjData] = useState({ name: "", user: "", type: "", img: "", git: "", live: "", time: "" })
-    const timestamp = new Date();
+    const datestamp = new Date();
+    const timestamp = datestamp.toLocaleString()
 
     function handleProject(e) {
         const { name, value } = e.target;
