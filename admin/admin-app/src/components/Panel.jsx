@@ -14,10 +14,6 @@ const Panel = () => {
         })
     }
 
-
- 
-
-
     async function handleApi() {
         let arr = []
         arr.push(projdata)
@@ -26,8 +22,8 @@ const Panel = () => {
                 method: "POST",
                 body: JSON.stringify(projdata)
             })
-           const data = await res.json()
-             console.log(data)
+            const data = await res.json()
+            console.log(data)
         } catch (error) {
             console.log(error)
         }
@@ -35,7 +31,8 @@ const Panel = () => {
     console.log(projdata)
 
 
- 
+
+
     return (
         <div>
             <div className="bg-white">
@@ -96,7 +93,6 @@ const Panel = () => {
                         </div>
                     </div>
                 </header>
-
                 <div className="relative isolate px-6 pt-14 lg:px-8">
                     <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                         <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
@@ -110,7 +106,7 @@ const Panel = () => {
                         <div >
                             <div className="max-w-md mx-auto">
                                 <div className="relative z-0 w-full mb-5 group">
-                                    <input type="text" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" name="name"  placeholder=" " onChange={handleProject}required />
+                                    <input type="text" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" name="name" placeholder=" " onChange={handleProject} required />
                                     <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-black400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-black500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Project name</label>
                                 </div>
                                 <div className="relative z-0 w-full mb-5 group">
@@ -127,7 +123,7 @@ const Panel = () => {
                                         <label htmlFor="floating_first_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-black400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-black500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">img</label>
                                     </div>
                                     <div className="relative z-0 w-full mb-5 group">
-                                        <input type="text"  id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " onChange={handleProject} name="git" required />
+                                        <input type="text" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " onChange={handleProject} name="git" required />
                                         <label htmlFor="floating_last_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-black400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-black500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">git</label>
                                     </div>
                                 </div>
