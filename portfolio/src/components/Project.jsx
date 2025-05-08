@@ -10,7 +10,6 @@ const Project = () => {
         const data = await res.json();
         const newdata = Object.values(data)
         const proj = setNewData(newdata)
-
         console.log(newdata)
     }
 
@@ -18,6 +17,16 @@ const Project = () => {
         handleApi()
 
     }, [])
+
+//  let obj=   {
+//     name: "",
+//     user: "",
+//     type: "",
+//     img: "",
+//     git: "",
+//     live: "",
+//     time: "",
+//     }
 
     return (
 
@@ -39,6 +48,9 @@ const Project = () => {
                                     </div>
                                 </div>
                                 <img className="img-fluid" src={ele.img} alt={ele.img} />
+                                    <div className="col-12">
+                                        <p>uploaded at : {ele.time}</p>
+                                    </div>
                                 <div className="row py-2 my-1" >
                                     <div className="col-lg-6">
                                         <button className='btn btn-sm btn-outline-warning w-100'>
